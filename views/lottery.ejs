@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>Choose Account: </p>
+   <select id="account">
+       <% for(let i=1; i< accounts.length;i++) {%>
+        <option value="<%= accounts[i] %>"><%= accounts[i] %></option>
+        <%}%>
+   </select>
+<p>No. of tickets </p><input type="text" id="tickets" name="tickets" 
+onkeyup="num_of_tickets(this)" placeholder="Number of tickets">
+<button id="buy">Buy tickets</button>
+<br><br>
+<button id="details">show my details</button>
+<label id="details_display"></label><br>
+<button id="balance">get contract balance</button>
+<br><br>
+<button id="winner">And the winner is..</button>
+<label id="winner_display"></label>
+<script src="js/lottery.js"></script>
+</body>
+</html>

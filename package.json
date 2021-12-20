@@ -1,0 +1,19 @@
+{
+  "name": "blockchain-lottery",
+  "version": "1.0.0",
+  "description": "lottery application using solidity",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "shreya",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "web3": "^1.6.1"
+  }
+}
